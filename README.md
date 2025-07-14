@@ -158,3 +158,18 @@ Tips
 - Use `--no-copy` if you only want to display the tree
 - Use `--depth` to limit output for large projects
 - Combine with other commands: `tc && echo "Tree copied!"`
+
+[npm-version-src]: https://img.shields.io/npm/v/tree-copy?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/tree-copy
+
+[npm-downloads-src]: https://img.shields.io/npm/dm/tree-copy?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/tree-copy
+
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/tree-copy?style=flat&colorA=18181B&colorB=28CF8D
+[bundle-href]: https://bundlephobia.com/result?p=tree-copy
+
+[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=18181B&colorB=28CF8D
+[jsdocs-href]: https://www.jsdocs.io/package/tree-copy
+
+[license-src]: https://img.shields.io/github/license/reeswell/tree-copy.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://github.com/reeswell/tree-copy/blob/main/LICENSE
