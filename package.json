@@ -1,0 +1,65 @@
+{
+  "name": "tree-copy",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.6.2",
+  "description": "_description_",
+  "author": "reeswell",
+  "license": "MIT",
+  "homepage": "https://github.com/reeswell/tree-copy#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reeswell/tree-copy.git"
+  },
+  "bugs": "https://github.com/reeswell/tree-copy/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "bin": {
+    "tree-copy": "./dist/index.mjs",
+    "tc": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint",
+    "prepublishOnly": "pnpm build && pnpm test",
+    "release": "pnpm publish",
+    "start": "tsx src/index.ts",
+    "start:copy": "tsx src/index.ts --copy",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.16.2",
+    "@types/node": "^24.0.13",
+    "acorn": "^8.15.0",
+    "eslint": "^9.31.0",
+    "lint-staged": "^16.1.2",
+    "simple-git-hooks": "^2.13.0",
+    "tinyexec": "^1.0.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "unbuild": "^3.5.0",
+    "vite": "^7.0.4",
+    "vitest": "^3.2.4",
+    "vitest-package-exports": "^0.1.1",
+    "yaml": "^2.8.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
