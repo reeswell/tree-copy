@@ -86,24 +86,31 @@ tc --ignore "*.tmp,cache,logs"
 
 ## Options Reference
 
-Usage: tc [path] [options]
+**Usage:** `tc [path] [options]`
 
-Arguments:
-  path                    Directory path to analyze (default: current directory)
+### Arguments
 
-Options:
-  -c, --copy             Copy output to clipboard (default: enabled)
-  --no-copy              Disable clipboard copy
-  -d, --depth <number>   Maximum depth to traverse (default: 5)
-  --hidden               Show hidden files and directories
-  --ignore <patterns>    Additional ignore patterns (comma-separated)
-  -h, --help             Display help information
-  -v, --version          Display version number
+| Argument | Description |
+|----------|-------------|
+| `path` | Directory path to analyze (default: current directory) |
 
-Note: Automatically reads .gitignore file if present
+### Options
+
+| Option | Description |
+|--------|-------------|
+| `-c, --copy` | Copy output to clipboard (default: enabled) |
+| `--no-copy` | Disable clipboard copy |
+| `-d, --depth <number>` | Maximum depth to traverse (default: 5) |
+| `--hidden` | Show hidden files and directories |
+| `--ignore <patterns>` | Additional ignore patterns (comma-separated) |
+| `-h, --help` | Display help information |
+| `-v, --version` | Display version number |
+
+> **Note:** Automatically reads .gitignore file if present
 
 ## Sample Output
 
+```text
 my-project/
 ├── package.json
 ├── README.md
@@ -118,6 +125,7 @@ my-project/
 │   └── app.test.ts
 └── dist/
     └── index.js
+```
 
 📋 Copied to clipboard!
 
